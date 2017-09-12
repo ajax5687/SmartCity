@@ -1,0 +1,68 @@
+body  {
+      height: 100%;
+      max-width:auto;
+      margin:0 auto; /* this is what centers the content in the page */ 
+      color:#000;
+      text-align: justify;
+      line-height: 1;
+    }
+
+#chart {
+  background: #fff;
+  font-family:'Oswald', sans-serif;
+  margin: 50px auto 0px auto;
+
+}
+
+.title {
+    font-family:'Oswald', sans-serif;
+    font-size: 32px;
+    color: #1A374D;
+    font-weight: 300;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+  fill: none;
+  stroke: #fff;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+rect.parent {
+    pointer-events: none;
+}
+
+.grandparent rect {
+  fill: orange;
+}
+
+.grandparent:hover rect {
+  fill: #ee9700;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.parent {
+  fill: #bbb;
+  fill-opacity: .5;
+}
+
+.children:hover rect.child {
+  fill: #bbb;
+}

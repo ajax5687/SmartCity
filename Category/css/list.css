@@ -1,0 +1,112 @@
+body  {
+      height: 100%;
+      max-width:auto;
+      margin:0 auto; /* this is what centers the content in the page */ 
+      color:#000;
+      text-align: justify;
+      line-height: 1;
+    }
+
+    h2 {
+    margin-bottom: 20px;
+    font-family:'Oswald', sans-serif;
+    font-size: 34px;
+    color: #1A374D;
+    font-weight: 300;
+    /*line-height: 1.2em;*/
+}
+ 
+ p {
+    font-family: 'Merriweather', serif;
+    color:#4B4B4B;
+    font-weight:300;
+}
+
+p.chatter /*subhead*/{
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight:300;
+    margin-bottom: 20px;
+    line-height: 1.8em;
+}
+
+#list {
+  width: 1024px;
+  height: 480px;
+  margin: 40px auto 0px auto;
+/*  color: #282828;*/
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  /*stroke: #000;*/
+  shape-rendering: crispEdges;
+}
+
+.axis text, .legend text {
+fill: grey;
+/*font-size: 11px;
+font-family: "Gotham", sans-serif;*/
+}
+
+.x.axis path {
+  display: none;
+}
+ 
+.label {
+  font-family:'Open Sans', sans-serif; /*using h4 from global */
+  font-size:13px;
+  color: #646464;
+  text-anchor: end;
+}
+
+.bar {stroke-width:0.5px; stroke: #8f8f8f;}
+
+.economy {fill: #DAA520;}
+.energy {fill: #c96916;}
+.housing {fill: #646464;}
+.transport {fill: #1A374D;}
+.water {fill: #5b9ac3;}
+
+.stacked {position:relative;}
+
+#chart-wrapper {
+  position: relative;
+  height: 480px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#annotation {
+  display: none;
+}
+
+.text {
+  width:300px;
+  position:absolute;
+  font-family: 'Open Sans', sans-serif;
+  color:#646464;
+  font-weight: lighter;
+  line-height: 1.3em;
+}
+
+#annotation-text {
+  font-size:14px;
+  top:200px;
+  left:400px;
+}
+
+input[type="radio"]{
+  margin:5px;
+}
+
+/*#radio-text {
+  font-size:16px;
+  top: 66px;
+  left: 728px;
+}*/
+
+form {
+  float: right;
+}
